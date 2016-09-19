@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:s="http://custom_component/ui"  >
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="chartdiv"></div>
+
+<s:gChart>
+
+    <link rel="stylesheet" href="resources/css/linestyle.css"/>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js" ></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="resources/js/line_chart.js" type="text/javascript" ></script>
+
+</s:gChart>
+
+<h:form>
+
+<input id="dates" type="date" name="dates" value="#{addPoint.x}"  title="Set X"/>
+
+
+<input id="visit" type="text" name="visits" value="#{addPoint.y}" title="Set Y"/>
+
+
+
+<input type="button" value="#{hibernate.start()}" onclick=" document.isPrototypeOf(add())"/>
+
+</h:form>
+
+</body>
+
+
+</html>

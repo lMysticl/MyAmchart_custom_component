@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - line_chart@localhost" uuid="06655b13-e0ff-405e-8bb4-65bd80914e48">
+    <database-info product="MySQL" version="5.7.13-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="line_chart">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="mysticdb"/>
+      <schema id="5" name="performance_schema"/>
+      <schema id="6" name="reminderdb"/>
+      <schema id="7" name="sys"/>
+      <table id="8" parent="1" name="addpoint"/>
+      <table id="9" parent="1" name="points"/>
+      <column id="10" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="11" parent="8" name="x">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="12" parent="8" name="y">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="13" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="14" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="15" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="hibernate.cfg.xml/Hibernate" uuid="a5988b4c-f7f7-498d-8f44-80fe1e7f8a0d">
+    <database-info product="MySQL" version="5.7.13-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="line_chart">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="mysticdb"/>
+      <schema id="5" name="performance_schema"/>
+      <schema id="6" name="reminderdb"/>
+      <schema id="7" name="sys"/>
+      <table id="8" parent="1" name="addpoint"/>
+      <column id="9" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="10" parent="8" name="x">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="11" parent="8" name="y">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="12" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="NewPersistenceUnit/Hibernate" uuid="f4f94903-a467-450a-b017-5deddce3b29e">
+    <database-info product="MySQL" version="5.7.13-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="line_chart">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="mysticdb"/>
+      <schema id="5" name="performance_schema"/>
+      <schema id="6" name="reminderdb"/>
+      <schema id="7" name="sys"/>
+      <table id="8" parent="1" name="addpoint"/>
+      <column id="9" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="10" parent="8" name="x">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="11" parent="8" name="y">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="12" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
