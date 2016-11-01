@@ -84,22 +84,21 @@ function generateChartData() {
 
 
 function addData() {
-        var chartData = generateChartData();
-        var b = document.getElementById('dates').value;
-        var c = document.getElementById('visit').value;
-          if (c != '') {
-            chartData.push({
-                date: b,
-                visits: c
-            });
-        }
+    var chartData = generateChartData();
+    var b = document.getElementById('dates').value;
+    var c = document.getElementById('visit').value;
+    if (c != '') {
+        chartData.push({
+            date: b,
+            visits: c
+        });
+    }
 
-        return chartData;
+    return chartData;
 
 }
 
 function add() {
     chart.dataProvider = addData();
     chart.validateData();
-
 }
